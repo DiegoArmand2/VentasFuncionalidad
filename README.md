@@ -6,3 +6,4 @@
 **Carlo Chiza** - #22001 - CCH - Anular pedidos de venta solo permite cerrar y se requiere el estado ANULADO
 * **Roberto Ruiz** - Ticket 22015 - Modificacion proceso cobros y pagos - **Nota importante: el modulo org.openbravo.advpaymentmngt debe compilarse junto al modulo ec.com.sidesoft.debitnote.interest.due**
 * **Roberto Ruiz** - Ticket 22644 - GLPI - TIcket - Eliminar no. de cuotas en la impresión de la retencion de compras
+* **Diego A Guallasamin** - Ticket 3184 - DESARROLLO - 2TESORERIA – GAP12 – Reporte de intereses por mora y gastos de cobranza no recibidos
