@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Rptc_InterestCollection" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="782" leftMargin="30" rightMargin="30" topMargin="20" bottomMargin="20" uuid="53b56dea-77d5-4cb2-b7c0-c9f2a60ca7e2">
 	<property name="ireport.zoom" value="1.2396694214876152"/>
-	<property name="ireport.x" value="0"/>
+	<property name="ireport.x" value="149"/>
 	<property name="ireport.y" value="0"/>
 	<property name="ireport.scriptlethandling" value="0"/>
 	<property name="ireport.encoding" value="UTF-8"/>
@@ -44,7 +44,7 @@ left join c_bpartner d on d.c_bpartner_id = a.c_bpartner_id
 left join c_invoice e on e.c_invoice_id = a.c_invoice_id
 where (a.c_bpartner_id = '699F3EF34D584C6B80E4A1ECECE49021' or $P{c_bpartner_id} is null)
 and a.Debitnote_ID is null and a.FIN_Payment_ID is null
-and to_date(to_char(a.Lastpaymentdate, 'YYYY-MM-DD'), 'YYYY-MM-DD') <= '2025-07-27'
+and to_date(to_char(a.Lastpaymentdate, 'YYYY-MM-DD'), 'YYYY-MM-DD') <= $P{Dateto}
 and ad_isorgincluded(c.ad_org_id, $P{ad_org_id}, a.ad_client_id) > 0
 and ($P{c_bpartner_id} is null or a.c_bpartner_id = $P{c_bpartner_id})
 order by a.duedate]]>
@@ -64,6 +64,12 @@ order by a.duedate]]>
 	<field name="tinterestlatepayment" class="java.math.BigDecimal"/>
 	<variable name="totalfactura" class="java.math.BigDecimal" calculation="Sum">
 		<variableExpression><![CDATA[]]></variableExpression>
+	</variable>
+	<variable name="totalmora" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[$F{tcollectionexpenses}]]></variableExpression>
+	</variable>
+	<variable name="totalcob" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[$F{tinterestlatepayment}]]></variableExpression>
 	</variable>
 	<title>
 		<band height="62" splitType="Stretch">
@@ -90,7 +96,7 @@ order by a.duedate]]>
 			<textField>
 				<reportElement x="105" y="47" width="535" height="15" uuid="4749f466-8082-485c-850c-f311154e0f61"/>
 				<textElement textAlignment="Center">
-					<font fontName="SansSerif" size="9" isBold="true" isItalic="false"/>
+					<font fontName="SansSerif" size="9" isBold="true" isItalic="false" isStrikeThrough="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{clientefiltro}]]></textFieldExpression>
 			</textField>
@@ -188,7 +194,7 @@ order by a.duedate]]>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="SansSerif" size="10" isBold="true"/>
 				</textElement>
-				<text><![CDATA[FECHA ULTIMO PAGO]]></text>
+				<text><![CDATA[FECHA ULT PAGO]]></text>
 			</staticText>
 			<staticText>
 				<reportElement key="staticText-2" x="640" y="0" width="71" height="33" uuid="2590ac0b-c421-4a65-bd5b-e823420dc888"/>
@@ -284,6 +290,23 @@ order by a.duedate]]>
 		</band>
 	</detail>
 	<summary>
-		<band height="19" splitType="Stretch"/>
+		<band height="19" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="640" y="0" width="71" height="18" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="c07f143c-7495-48a5-864a-7c542882db2f"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{totalmora}]]></textFieldExpression>
+				<patternExpression><![CDATA[$P{NUMBERFORMAT}.toPattern()]]></patternExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="711" y="1" width="71" height="18" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="2df4f3ff-01b7-43fe-8456-5f20dcaf0ecd"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{totalcob}]]></textFieldExpression>
+				<patternExpression><![CDATA[$P{NUMBERFORMAT}.toPattern()]]></patternExpression>
+			</textField>
+		</band>
 	</summary>
 </jasperReport>
