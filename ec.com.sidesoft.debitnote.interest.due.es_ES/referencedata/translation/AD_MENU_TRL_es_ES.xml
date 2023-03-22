@@ -28,4 +28,8 @@
     <value column="Name" isTrl="Y" original="Update Cut Off Date">Actualizar la Fecha de Corte</value>
     <value column="Description" isTrl="N" original=""/>
   </row>
+  <row id="CBE1FEBD4AC748D583D32F3E2EAD56C8" trl="Y">
+    <value column="Name" isTrl="Y" original="Interest Default and Pending Collection">Mora y Cobranza Pendiente</value>
+    <value column="Description" isTrl="N" original=""/>
+  </row>
 </compiereTrl>

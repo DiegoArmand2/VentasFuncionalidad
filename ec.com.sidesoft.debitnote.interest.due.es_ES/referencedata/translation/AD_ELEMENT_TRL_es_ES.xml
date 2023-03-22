@@ -90,6 +90,16 @@
     <value column="PO_Name" isTrl="N" original=""/>
     <value column="PO_PrintName" isTrl="N" original=""/>
   </row>
+  <row id="41A1590CAD6A4DFB80534764AED0A23E" trl="Y">
+    <value column="Name" isTrl="Y" original="Date to Report interes">A la Fecha</value>
+    <value column="PrintName" isTrl="Y" original="Date To">A la Fecha</value>
+    <value column="Description" isTrl="N" original=""/>
+    <value column="Help" isTrl="N" original=""/>
+    <value column="PO_Description" isTrl="N" original=""/>
+    <value column="PO_Help" isTrl="N" original=""/>
+    <value column="PO_Name" isTrl="N" original=""/>
+    <value column="PO_PrintName" isTrl="N" original=""/>
+  </row>
   <row id="5B2355C4ECD542F498E8B2D25313EF11" trl="Y">
     <value column="Name" isTrl="Y" original="Rate">Tasa</value>
     <value column="PrintName" isTrl="Y" original="Rate">Tasa</value>
@@ -153,6 +163,16 @@
   <row id="6F553F8DC4294B48914387A7BCC05B85" trl="N">
     <value column="Name" isTrl="Y" original="Doc. Interest Debit Note">Doc. Interés Nota de Débito</value>
     <value column="PrintName" isTrl="Y" original="Doc. Interest Debit Note">Doc. Interés Nota de Débito</value>
+    <value column="Description" isTrl="N" original=""/>
+    <value column="Help" isTrl="N" original=""/>
+    <value column="PO_Description" isTrl="N" original=""/>
+    <value column="PO_Help" isTrl="N" original=""/>
+    <value column="PO_Name" isTrl="N" original=""/>
+    <value column="PO_PrintName" isTrl="N" original=""/>
+  </row>
+  <row id="7C15F16069574DE3AF54A4B21F86C7E2" trl="Y">
+    <value column="Name" isTrl="Y" original="user interest report">Usuario</value>
+    <value column="PrintName" isTrl="Y" original="User">Usuario</value>
     <value column="Description" isTrl="N" original=""/>
     <value column="Help" isTrl="N" original=""/>
     <value column="PO_Description" isTrl="N" original=""/>

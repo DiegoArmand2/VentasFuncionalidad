@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <compiereTrl baseLanguage="en_US" language="es_ES" table="AD_PROCESS" version="">
+  <row id="0ADB74A5F15442179DFE46FE8F289F9F" trl="Y">
+    <value column="Name" isTrl="Y" original="Interest Default and Pending Collection">Mora y Cobranza Pendiente</value>
+    <value column="Description" isTrl="N" original=""/>
+    <value column="Help" isTrl="N" original=""/>
+  </row>
   <row id="1F4A24CB31C74211850B95A9023E4B1E" trl="Y">
     <value column="Name" isTrl="Y" original="Update Cut Off Date">Actualizar la Fecha de Corte</value>
     <value column="Description" isTrl="N" original=""/>

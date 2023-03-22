@@ -10,4 +10,9 @@
     <value column="Description" isTrl="N" original=""/>
     <value column="Help" isTrl="N" original=""/>
   </row>
+  <row id="93E3DFD6F0C74924A8F562B5A8D0522C" trl="N">
+    <value column="Name" isTrl="N" original="User interes report - reference">User interes report - reference</value>
+    <value column="Description" isTrl="N" original=""/>
+    <value column="Help" isTrl="N" original=""/>
+  </row>
 </compiereTrl>
