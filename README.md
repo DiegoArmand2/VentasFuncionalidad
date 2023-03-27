@@ -7,3 +7,4 @@
 * **Roberto Ruiz** - Ticket 22015 - Modificacion proceso cobros y pagos - **Nota importante: el modulo org.openbravo.advpaymentmngt debe compilarse junto al modulo ec.com.sidesoft.debitnote.interest.due**
 * **Roberto Ruiz** - Ticket 22644 - GLPI - TIcket - Eliminar no. de cuotas en la impresión de la retencion de compras
 * **Diego A Guallasamin** - Ticket 3184 - DESARROLLO - 2TESORERIA – GAP12 – Reporte de intereses por mora y gastos de cobranza no recibidos
+* **Diego A Guallasamin** - Ticket 3197 - DESARROLLO - 2 CARTERA – GAP13 – Autorización de cobro mora y gastos de cobranza
