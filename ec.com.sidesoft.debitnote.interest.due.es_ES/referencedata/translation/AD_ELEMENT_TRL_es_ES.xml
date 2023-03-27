@@ -100,6 +100,16 @@
     <value column="PO_Name" isTrl="N" original=""/>
     <value column="PO_PrintName" isTrl="N" original=""/>
   </row>
+  <row id="4E66DAB14B03494CB510F3278872DA2D" trl="Y">
+    <value column="Name" isTrl="Y" original="Enable Default Collection and Cob Expenses">Habilitar Cobro Mora y Gastos Cob</value>
+    <value column="PrintName" isTrl="Y" original="Enable Default Collection and Cob Expenses">Habilitar Cobro Mora y Gastos Cob</value>
+    <value column="Description" isTrl="N" original=""/>
+    <value column="Help" isTrl="N" original=""/>
+    <value column="PO_Description" isTrl="N" original=""/>
+    <value column="PO_Help" isTrl="N" original=""/>
+    <value column="PO_Name" isTrl="N" original=""/>
+    <value column="PO_PrintName" isTrl="N" original=""/>
+  </row>
   <row id="5B2355C4ECD542F498E8B2D25313EF11" trl="Y">
     <value column="Name" isTrl="Y" original="Rate">Tasa</value>
     <value column="PrintName" isTrl="Y" original="Rate">Tasa</value>
