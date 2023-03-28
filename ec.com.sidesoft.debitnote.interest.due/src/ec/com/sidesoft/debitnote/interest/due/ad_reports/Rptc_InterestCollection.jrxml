@@ -225,64 +225,64 @@ order by a.duedate]]>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement stretchType="RelativeToBandHeight" x="105" y="0" width="169" height="18" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="dded3642-fee8-44d4-8ce6-d3911993e79a"/>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="SansSerif"/>
+					<font fontName="SansSerif" size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{partner}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="105" height="18" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="12ec726e-5dab-47dd-9c60-f8cfe5dcfd2f"/>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="SansSerif"/>
+					<font fontName="SansSerif" size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{organizationname}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
 				<reportElement stretchType="RelativeToBandHeight" x="274" y="0" width="90" height="18" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="e6dde865-9a8a-4141-b639-fe496d0bf021"/>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="SansSerif"/>
+					<font fontName="SansSerif" size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{documentno}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
 				<reportElement stretchType="RelativeToBandHeight" x="364" y="0" width="75" height="18" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="2708bba1-9501-4c9c-95db-564ef79d8ada"/>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="SansSerif"/>
+					<font fontName="SansSerif" size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{dateinvoice}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement stretchType="RelativeToBandHeight" x="439" y="0" width="51" height="18" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="58f0fd25-755c-43b0-bb3b-73c9bb9fb998"/>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="SansSerif"/>
+					<font fontName="SansSerif" size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{cuotano}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
 				<reportElement stretchType="RelativeToBandHeight" x="490" y="0" width="75" height="18" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="1d5d3369-7fc0-4c2f-aae8-350b6372affd"/>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="SansSerif"/>
+					<font fontName="SansSerif" size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{duedate}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
 				<reportElement stretchType="RelativeToBandHeight" x="565" y="0" width="75" height="18" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="769caba0-9f49-4674-9ea4-0cc72a69cc86"/>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="SansSerif"/>
+					<font fontName="SansSerif" size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{lastpaymentdatefilter}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement stretchType="RelativeToBandHeight" x="640" y="0" width="71" height="18" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="06c839d3-25ca-4b02-a838-0ba19fa7ad37"/>
-				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="SansSerif"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="SansSerif" size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{tcollectionexpenses}]]></textFieldExpression>
 				<patternExpression><![CDATA[$P{NUMBERFORMAT}.toPattern()]]></patternExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement stretchType="RelativeToBandHeight" x="711" y="0" width="71" height="18" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="b57122a5-efc5-4f03-8941-2bbd4ebb01f5"/>
-				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="SansSerif"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="SansSerif" size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{tinterestlatepayment}]]></textFieldExpression>
 				<patternExpression><![CDATA[$P{NUMBERFORMAT}.toPattern()]]></patternExpression>
@@ -293,16 +293,16 @@ order by a.duedate]]>
 		<band height="19" splitType="Stretch">
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement stretchType="RelativeToBandHeight" x="640" y="0" width="71" height="18" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="c07f143c-7495-48a5-864a-7c542882db2f"/>
-				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="SansSerif" isBold="true"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="SansSerif" size="9" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$V{totalmora}]]></textFieldExpression>
 				<patternExpression><![CDATA[$P{NUMBERFORMAT}.toPattern()]]></patternExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement stretchType="RelativeToBandHeight" x="711" y="1" width="71" height="18" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="2df4f3ff-01b7-43fe-8456-5f20dcaf0ecd"/>
-				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="SansSerif" isBold="true"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="SansSerif" size="9" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$V{totalcob}]]></textFieldExpression>
 				<patternExpression><![CDATA[$P{NUMBERFORMAT}.toPattern()]]></patternExpression>
